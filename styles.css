@@ -78,10 +78,11 @@ button {
     border-radius: 5px;
     padding: 5px;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 button:hover {
-    color: hsl(158, 36%, 21%);
+    background-color: hsl(158, 36%, 21%);
 }
 
 .cart {
