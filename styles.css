@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    background-color: hsl(30, 38%, 92%);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    margin: 0;
+    color: hsl(212, 21%, 14%);
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 666px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+main div {
+    width: 50%;
+    height: 500px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price p {
+    text-decoration: line-through;
+    padding-left: 20px;
+}
+
+.price h1 {
+    color: hsl(158, 36%, 37%);
+}
+
+.perfumeDesktop {
+    height: 500px;
+    width: 333px;
+    border-radius: 10px 0 0 10px;
+}
+
+.perfumeMobile {
+    display: none;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height: 75%;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.cart {
+    padding: 10px;
+}
+
+.spacing {
+    letter-spacing: 5px;
+}
+
+@media (max-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 333px;
+        height: 666px;
+        border-radius: 10px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .perfumeDesktop {
+        display: none;
+    }
+    
+    .perfumeMobile {
+        display: block;
+        width: 333px;
+        height: 222px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    main div.images {
+        width: 333px;
+        height: 222px;
+    }
+
+    main div {
+        width: 320px;
+        height: 500px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        height: calc(100% / 3 * 2);
+        width: 222px;
+        justify-content: center;
+    }
+
+    div.price {
+        width: 333px;
+        height: 50px;
+    }
+}
