@@ -80,6 +80,10 @@ button {
     margin-top: 15px;
 }
 
+button:hover {
+    color: hsl(158, 36%, 21%);
+}
+
 .cart {
     padding: 10px;
 }
